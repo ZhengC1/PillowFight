@@ -1,9 +1,23 @@
 <div class="container">
-    <h1>Pillow Fight Form</h1>
-    <form>
+    <h1>Pillow Fight Chun</h1>
+    <form #PillowForm="ngForm">
         <div class="form-group">
-            <label for="firstName">FirstName</label>
-            <input type="text" class="form-control" id="firstName" required>
+            <label for="firstName">First Name</label>
+            <input type="text" class="form-control" id="firstName" required 
+            [(ngModel)]="model.firstName" name="firstName">
+            TODO: remove this: {{model.firstName}}
+        </div> <div class="form-group">
+            <label for="lastName">Last name</label>
+            <input type="text" class="form-control" id="lastName" required
+            [(ngModel)]="model.lastName" name="lastName">
+        </div> <div class="form-group">
+            <label for="location">Location</label>
+            <input type="text" class="form-control" id="location" required 
+            [(ngModel)]="model.location" name="location">
+        </div><div class="form-group">
+            <label for="note">Note to opponent</label>
+            <input type="text" class="form-control" id="note" 
+            [(ngModel)]="model.note" name="note">
         </div>
 
         <button type="submit" class="btn btn-success">

@@ -1,0 +1,23 @@
+<div class="container">
+    <h1>Pillow Fight Chun</h1>
+    <form>
+        <div class="form-group">
+            <label for="test">this is a test</label>
+            <input [value]="currentPillow.name
+            (input)=$event.target.value">
+            <label for="firstName">First Name</label>
+            <input type="text" class="form-control" id="firstName" required>
+            <label for="lastName">Last name</label>
+            <input type="text" class="form-control" id="lastName" required>
+            <label for="location">Location</label>
+            <input type="text" class="form-control" id="location" required>
+            <label for="note">Note to opponent</label>
+            <input type="text" class="form-control" id="note">
+        </div>
+
+        <button type="submit" class="btn btn-success">
+            Submit
+        </button>
+
+    </form>
+</div>

@@ -8,7 +8,7 @@ import { PillowFight } from '../pillow-fight';
 })
 export class PillowFormComponent {
 
-  model = new PillowFight('chun', 'zheng', 'hello world');
+  model = new PillowFight('chun', 'zheng', 'location', 'Hello World!');
 
   submitted = false;
   onSubmit() { this.submitted = true; }
