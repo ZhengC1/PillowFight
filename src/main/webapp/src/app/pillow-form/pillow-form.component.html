@@ -1,0 +1,25 @@
+<div class="container">
+    <h1>Hero Form</h1>
+    <form #PillowForm="ngForm">
+        {{diagnostic}}
+        <div class="form-group">
+            <label for="firstName">first name</label>
+            <input type="text" class="form-control" id="firstName" required [(ngModel)]="model.firstName" name="firstName">
+        </div>
+        <div class="form-group">
+            <label for="lastName">first name</label>
+            <input type="text" class="form-control" id="lastName" required [(ngModel)]="model.lastName" name="lastName">
+        </div>
+        <div class="form-group">
+            <label for="location">first name</label>
+            <input type="text" class="form-control" id="location" required [(ngModel)]="model.location" name="location">
+        </div>
+        <div class="form-group">
+            <label for="note">first name</label>
+            <input type="text" class="form-control" id="note" required [(ngModel)]="model.note" name="note">
+        </div>
+
+        <button type="submit" class="btn btn-success">Submit</button>
+
+    </form>
+</div>
