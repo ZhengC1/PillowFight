@@ -1,1 +1,1 @@
-java --add-modules java.xml.bind -jar target/PillowRest-1.1-SNAPSHOT.jar server config.yml
+java -jar target/PillowRest-1.1-SNAPSHOT.jar server config.yml
