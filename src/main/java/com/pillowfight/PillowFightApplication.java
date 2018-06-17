@@ -20,6 +20,7 @@ public class PillowFightApplication extends Application<PillowFightConfiguration
     @Override
     public void initialize(Bootstrap<PillowFightConfiguration> bootstrap) {
         bootstrap.addBundle(new MultiPartBundle());
+        bootstrap.addBundle(new AssetsBundle("/webapp", "/","index.html", "static"));
     }
 
     @Override
