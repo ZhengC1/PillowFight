@@ -21,6 +21,8 @@ public class PillowFightApplication extends Application<PillowFightConfiguration
     @Override
     public void initialize(Bootstrap<PillowFightConfiguration> bootstrap) {
         bootstrap.addBundle(new MultiPartBundle());
+        System.out.println(new java.io.File("src/webapp/dist/webapp/").getAbsolutePath());
+        bootstrap.addBundle(new AssetsBundle("/src/main/webapp/dist/webapp/", "/docs", "index.html", "static"));
     }
 
     @Override
