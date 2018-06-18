@@ -3,6 +3,7 @@ package com.pillowfight;
 import com.pillowfight.resources.PillowFightResource;
 import com.pillowfight.Health.PillowHealthCheck;
 import io.dropwizard.Application;
+import io.dropwizard.assets.AssetsBundle;
 import io.dropwizard.forms.MultiPartBundle;
 import io.dropwizard.setup.Bootstrap;
 import io.dropwizard.setup.Environment;
@@ -14,13 +15,12 @@ public class PillowFightApplication extends Application<PillowFightConfiguration
 
     @Override
     public String getName() {
-        return "Chun Zheng";
+        return "PillowFight";
     }
 
     @Override
     public void initialize(Bootstrap<PillowFightConfiguration> bootstrap) {
         bootstrap.addBundle(new MultiPartBundle());
-        bootstrap.addBundle(new AssetsBundle("/webapp", "/","index.html", "static"));
     }
 
     @Override
