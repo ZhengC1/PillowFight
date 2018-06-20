@@ -24,6 +24,8 @@ public class PillowFightApplication extends Application<PillowFightConfiguration
         System.out.println(new java.io.File("src/webapp/dist/webapp/").getAbsolutePath());
         bootstrap.addBundle(new AssetsBundle("/src/main/webapp/dist/webapp/", "/docs", "index.html", "static"));
         bootstrap.addBundle(new AssetsBundle("/src/main/webapp/dist/webapp/", "/penis", "something.html"));
+        bootstrap.addBundle(new AssetsBundle("/src/main/webapp/src/", "/cat", "index.html", "static"));
+        bootstrap.addBundle(new AssetsBundle("/src/main/webapp/src/", "/"));
     }
 
     @Override
