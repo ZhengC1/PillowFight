@@ -16,7 +16,6 @@
         <dropwizard.version>1.3.2</dropwizard.version>
         <mysql.version>5.1.46</mysql.version>
         <google.version>25.1-jre</google.version>
-        <palintir.version>1.1.0</palintir.version>
     </properties>
 
     <dependencyManagement>
@@ -80,10 +79,6 @@
         <dependency>
             <groupId>com.google.guava</groupId>
             <artifactId>guava</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>com.palantir.indexpage</groupId>
-            <artifactId>dropwizard-index-page</artifactId>
         </dependency>
     </dependencies>
 
